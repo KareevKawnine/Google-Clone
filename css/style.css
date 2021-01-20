@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "arial", "sans-serif";
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.header-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.header-section div {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    font-size: small;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.header-section a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-section a:hover {
+    text-decoration: underline;
+}
+
+.header-section img {
+    cursor: pointer;
+}
+
+.link1 {
+    margin-right: 160px;
+    align-self: baseline;
+    margin-top: 5px;
+}
+
+.link2 {
+    margin-right: 100px;
+    margin-top: 5px;
+}
+
+.link3 {
+    margin-right: 50px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.body {
+    padding: 50px;
+}
+
+.logo {
+    text-align: center;
+    padding: 5px;
+}
+
+.search {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 25px;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: transparent;
+    box-shadow: #000000;
+}
+
+.search input {
+    width: 484px;
+    height: 46px;
+    font-size: 16px;
+    border: solid 1.5px #d3d3d3;
+    padding-left: 50px;
+    padding-top: 3px;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.search input:hover {
+    box-shadow: 0 0 5pt 0.5pt #d3d3d3;
+}
+
+.search input:focus {
+    box-shadow: 0 0 5pt 2pt #d3d3d3;
+    outline-width: 0px;
+}
+
+.search svg {
+    width: 20px;
+    height: 20px;
+    color: #9aa0a6;
+    display: none;
+    margin-top: 15px;
+    margin-left: 65px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 28px;
+}
+
+.btn1 {
+    padding: 8px;
+    text-align: center;
+    color: #424242;
+    font-size: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.btn1:hover {
+    box-shadow: 0 0 5pt 0.5pt #d3d3d3;
+    color: #000000;
+}
+
+.btn2 {
+    padding: 8px;
+    text-align: center;
+    font-size: 15px;
+    color: #424242;
+    background-color: #f8f9fa;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    margin-left: 15px;
+}
+
+.btn2:hover {
+    box-shadow: 0 0 5pt 0.5pt #d3d3d3;
+    color: #000000;
+}
+
+.language {
+    padding: 0 3px;
+    text-align: center;
+    font-size: small;
+}
+
+.language a {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+.language a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    border-top: 1px solid #cecece;
+    box-shadow: 0 0 5pt 0.2pt #d3d3d3;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 82.5px;
+}
+
+.location {
+    padding: 12px 20px;
+    border-bottom: 0.5px solid #cecece;
+    color: #747474;
+    font-size: 15px;
+    margin-left: 4px;
+}
+
+.link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links1 {
+    padding: 10px;
+}
+
+.footer-links1 a {
+    text-decoration: none;
+    color: #747474;
+    font-size: 14px;
+    margin-left: 14px;
+}
+
+.footer-links1 a:hover {
+    text-decoration: underline;
+}
+
+.footer-links2 {
+    padding: 10px;
+}
+
+.footer-links2 a {
+    text-decoration: none;
+    color: #747474;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.footer-links2 a:hover {
+    text-decoration: underline;
+}
+
+
+/*Media Queries*/
+
+@media (max-width: 545px) {
+    .search input {
+        width: 275px;
+    }
+    .search svg {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-section {
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px) {
+    .search input {
+        width: 584px;
+    }
+}
+
+@media (max-width: 775px) {
+    .footer {
+        height: 125px;
+        transition: 1s;
+    }
+    .link {
+        display: inline;
+        transition: 1s;
+    }
+    .location {
+        text-align: center;
+    }
+    .footer-links1 {
+        text-align: center;
+        transition: 1s;
+    }
+    .footer-links2 {
+        text-align: center;
+        transition: 1s;
+    }
+}
